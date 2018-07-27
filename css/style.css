@@ -337,12 +337,12 @@
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: 2
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.testimonial .container {
-    position: absolute;
-    z-index: 3;
-}
+
 .testimonial .carousel-item .carousel-caption h5 {
     font-size: 18px;
     margin-top: 30px;
