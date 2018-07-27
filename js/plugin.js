@@ -1,6 +1,4 @@
-
 /*global $, JQuery , alert*/
-
 $(function (){
 
     'use strict';
@@ -17,7 +15,7 @@ $(function (){
     $('.featured-work ul li').on('click', function () {
 
         $(this).addClass('active').siblings().removeClass('active');
-        console.log($(this).data('class'));
+
         if($(this).data('class') == 'all'){
             $('.gallary .col-md').css('opacity', 1);
 
@@ -30,38 +28,31 @@ $(function (){
 
     //change navbar active color
 
-    $('.navbar-light .navbar-nav .nav-link').click(function(e){
-
+    $(".navbar-light .navbar-nav .nav-link").on('click',function(){
 
         $(this).parent().addClass('active').siblings().removeClass('active');
-        
-    });
-
-    $(".navbar-light .navbar-nav .nav-link").click(function(){
-
-//        console.log( $('#'+ $(this).data('value')) );
 
         $('html , body').animate({
-    
-            scrollTop: $('#'+ $(this).data('value')).offset().top - navbarHeight
+
+            scrollTop: $('#'+ $(this).data('value')).offset().top - navbarHeight 
             
         },1000);
-      });
+    });
 
     $(window).scroll(function(){
         
         $('section').each(function() {
 
-            if ( $(window).scrollTop() > ( $(this).offset().top) - navbarHeight) {
+            if ( $(window).scrollTop() > ( $(this).offset().top) ) {
 
             var sectionID = $(this).attr('id');
                 
-             $('.navbar-light .navbar-nav .nav-link').parent().removeClass('active');
+            $('.navbar-light .navbar-nav .nav-link').parent().removeClass('active');
 
             $('.navbar-light .navbar-nav .nav-link[data-value="'+ sectionID +'"]').parent().addClass('active'); 
     
-            }   
-        });
+        }   
+    });
 
         // ------------------------ make a scroll top with JQuery 
 
@@ -75,6 +66,7 @@ $(function (){
         if ($(window).scrollTop() >= (windowHeight - (uppernavHeight + navbarHeight)) ){
 
             if (!$('.navbar').hasClass('fixed-top')){ 
+
                 $('.navbar').addClass('fixed-top');
             }
             }else{
