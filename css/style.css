@@ -121,15 +121,15 @@
     background-size: cover;
 }
 .slider .carousel-one {
-    background: url(../images/01.png)  ;
+    background-image: url(../images/01.png)  ;
     /* width: 100vw;
     object-fit: cover; */
 }
 .slider .carousel-two {
-    background: url(../images/02.jpg) ;
+    background-image: url(../images/02.jpg) ;
 }
 .slider .carousel-three {
-    background: url(../images/01.png);
+    background-image: url(../images/01.png);
 }
 .slider .carousel-caption{
     background: rgba(0, 0, 0, 0.5);
