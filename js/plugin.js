@@ -5,9 +5,11 @@ $(function (){
 
     var windowHeight   = $(window).height(),
         uppernavHeight = $('.upper-bar').innerHeight(),
-        navbarHeight   = $('.navbar').innerHeight();
+        navbarHeight   = $('.navbar').innerHeight(),
+testimonialHeight      = $('.testimonial').innerHeight();
 
-    $('.slider ,.carousel-item').height(windowHeight - (uppernavHeight + navbarHeight));
+    $('.slider ,.slider .carousel-item ').height(windowHeight - (uppernavHeight + navbarHeight));
+    $('.testimonial .carousel-item').height(testimonialHeight - 250);
     // $('.testimonial .carousel-item').height(windowHeight - 360);
 
 
@@ -23,7 +25,7 @@ $(function (){
             $('.gallary .col-md').css('opacity', '0.07');
            $($(this).data('class')).parent().css('opacity', 1);
         }
-        
+
     });
 
     //change navbar active color
@@ -34,27 +36,27 @@ $(function (){
 
         $('html , body').animate({
 
-            scrollTop: $('#'+ $(this).data('value')).offset().top - navbarHeight 
-            
+            scrollTop: $('#'+ $(this).data('value')).offset().top - navbarHeight
+
         },1000);
     });
 
     $(window).scroll(function(){
-        
+
         $('section').each(function() {
 
             if ( $(window).scrollTop() > ( $(this).offset().top) ) {
 
             var sectionID = $(this).attr('id');
-                
+
             $('.navbar-light .navbar-nav .nav-link').parent().removeClass('active');
 
-            $('.navbar-light .navbar-nav .nav-link[data-value="'+ sectionID +'"]').parent().addClass('active'); 
-    
-        }   
+            $('.navbar-light .navbar-nav .nav-link[data-value="'+ sectionID +'"]').parent().addClass('active');
+
+        }
     });
 
-        // ------------------------ make a scroll top with JQuery 
+        // ------------------------ make a scroll top with JQuery
 
         if ($(this).scrollTop() >= 700){
             $('.scrollUp').show();
@@ -65,14 +67,14 @@ $(function (){
 
         if ($(window).scrollTop() >= (windowHeight - (uppernavHeight + navbarHeight)) ){
 
-            if (!$('.navbar').hasClass('fixed-top')){ 
+            if (!$('.navbar').hasClass('fixed-top')){
 
                 $('.navbar').addClass('fixed-top');
             }
             }else{
                 $('.navbar').removeClass('fixed-top');
-            
-            } 
+
+            }
     });
 
     /// ---------------------------- make a scroll top in javascript  --------------------
@@ -92,7 +94,7 @@ $(function (){
     $('.scrollUp').on('click', function () {
         $('html ,body').animate({
             scrollTop: '0'
-        },600);     
+        },600);
     });
 
 

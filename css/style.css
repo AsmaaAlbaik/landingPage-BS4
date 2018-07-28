@@ -38,22 +38,15 @@
 }
 .upper-bar .phone{
     margin-right: 10px;
-
-
 }
-
 .upper-bar .fa-phone{
     transform: rotate(90deg);
-
 }
 .upper-bar .fa-envelope ,
 .upper-bar .fa-phone{
     color: #fff;
     margin-right: 5px;
-
 }
-
-
 .upper-bar button {
     background: transparent;
     border-color: #ec1c23;
@@ -79,7 +72,7 @@
 }
 .navbar.fixed-top  .navbar-nav .nav-link {
     color: #fff
-} 
+}
 .navbar.fixed-top .navbar-brand{
     color: #fff;
 }
@@ -99,11 +92,11 @@
     font-size: 30px;
     color: #08526d
 }
-.navbar-light .navbar-brand .title{
+.navbar-light .navbar-brand .title {
     color: #ec1c23;
 }
 /* end navbar */
-.slider .carousel-inner{
+.slider .carousel-inner {
     display: flex;
     align-items: center;
     justify-content: left;
@@ -114,7 +107,7 @@
     left: 100px;
     color: #fff
 }
-.slider .carousel-item{
+.slider .carousel-item {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -122,8 +115,6 @@
 }
 .slider .carousel-one {
     background-image: url(../images/01.png)  ;
-    /* width: 100vw;
-    object-fit: cover; */
 }
 .slider .carousel-two {
     background-image: url(../images/02.jpg) ;
@@ -177,7 +168,7 @@
 /* end overview section */
 .overview{
     padding: 100px 0;
-    background: #f0f5f7; 
+    background: #f0f5f7;
 }
 .overview h1 {
     font-size: 42px;
@@ -208,9 +199,9 @@
     font-size: 18px;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out; 
+    transition: all 0.5s ease-in-out;
     font-weight: bold;
-    
+
 }
 .overview .viewmore:hover {
     background: transparent;
@@ -246,7 +237,7 @@
     margin-bottom: 10px;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out; 
+    transition: all 0.3s ease-in-out;
     cursor: pointer;
     font-size: 18px;
     padding: 5px 0px;
@@ -341,7 +332,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
+
 
 .testimonial .carousel-item .carousel-caption h5 {
     font-size: 18px;
@@ -610,7 +603,7 @@ footer .copyright i {
     color: #687074;
     cursor: pointer;
 }
-/* 
+/*
 <i class="fab fa-facebook-f fa-sm"></i>
 <i class="fab fa-twitter fa-sm"></i>
 <i class="fab fa-pinterest-p fa-sm"></i>
