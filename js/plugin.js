@@ -10,7 +10,6 @@ testimonialHeight      = $('.testimonial').innerHeight();
 
     $('.slider ,.slider .carousel-item ').height(windowHeight - (uppernavHeight + navbarHeight));
     $('.testimonial .carousel-item').height(testimonialHeight - 250);
-    // $('.testimonial .carousel-item').height(windowHeight - 360);
 
 
     // futer work shuffle
@@ -45,7 +44,7 @@ testimonialHeight      = $('.testimonial').innerHeight();
 
         $('section').each(function() {
 
-            if ( $(window).scrollTop() > ( $(this).offset().top) ) {
+            if ( $(window).scrollTop() > ( ($(this).offset().top ) - navbarHeight) ) {
 
             var sectionID = $(this).attr('id');
 
